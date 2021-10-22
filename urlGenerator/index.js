@@ -21,7 +21,9 @@ exports.handler = async (event, context) => {
     name = '',
   } = event;
 
-  if (typeof range !== 'number') {
+  const amount = parseInt(range, 10);
+
+  if (typeof amount !== 'number') {
     console.error('Validation Failed');
     return new Error('Invalid Input');
   }
