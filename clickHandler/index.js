@@ -1,8 +1,8 @@
 const Airtable = require('airtable');
 
 const TABLE = 'Link Redirect';
-const { AIRTABLE_API_KEY = 'keyJSp2BUI1d4H4Ty' } = process.env;
-const { AIRTABLE_BASE = 'appGCSG3T3Goy5EYP' } = process.env;
+const { AIRTABLE_API_KEY = '' } = process.env;
+const { AIRTABLE_BASE = '' } = process.env;
 
 const airtableClient = new Airtable({ apiKey: AIRTABLE_API_KEY }).base(AIRTABLE_BASE);
 
